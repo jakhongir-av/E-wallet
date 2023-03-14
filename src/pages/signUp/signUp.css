@@ -33,6 +33,7 @@ input {
     padding: 16px 12px;
     padding-left: 30px;
     border: none;
+    font-size: 20px;
 }
 
 input::placeholder {
@@ -43,13 +44,17 @@ input::placeholder {
     color: #94AFB6;
 }
 
+input:focus {
+    outline: none;
+}
+
 .email__input {
     border-bottom: 1px solid #DDDDDD;
 }
 
 .input__frames {
     position: absolute;
-    top: 10px;
+    top: calc(50% - 12px);
     left: 2px;
 }
 
@@ -61,4 +66,9 @@ input::placeholder {
     background-color: #fff;
     padding: 5px 12px;
     border-radius: 5px;
+}
+
+.form__anchor {
+    display: flex;
+    margin-top: 20px;
 }

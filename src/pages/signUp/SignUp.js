@@ -10,7 +10,7 @@ function SignUp() {
       <header>
         <div className="header__logo">
           <img src={logo} alt="Logo" />
-          <h2>SING IN</h2>
+          <h2>SING UP</h2>
         </div>
       </header>
       <main>
@@ -35,7 +35,9 @@ function SignUp() {
             </div>
           </div>
           {/* Link */}
-          <a>Forgot password?</a>
+          <div className="form__anchor">
+            <a href="#">Forgot password?</a>
+          </div>
           {/* Btns */}
         </form>
       </main>

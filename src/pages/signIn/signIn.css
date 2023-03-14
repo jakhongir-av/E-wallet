@@ -87,7 +87,7 @@ input:focus {
 }
 
 .form__btn_wrapper {
-    margin-top: 200px;
+    margin-top: 302px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -106,7 +106,7 @@ input:focus {
 }
 
 .btn {
-  font-family: 'Nunito';
+    font-family: 'Nunito';
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
@@ -116,4 +116,3 @@ input:focus {
     background-color: transparent;
 
 }
-

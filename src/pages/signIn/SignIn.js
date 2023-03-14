@@ -1,5 +1,4 @@
 import React from 'react'
-import './signIn.css';
 import logo from "../../assets/Images/logo.png";
 import emailFrame from "../../assets/Images/email-frame.png";
 import passwordFrame from "../../assets/Images/password-frame.png";

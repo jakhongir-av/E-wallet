@@ -1,10 +1,10 @@
-import React from "react";
-import "./signUp.css";
+import React from 'react'
+import './signIn.css';
 import logo from "../../assets/Images/logo.png";
 import emailFrame from "../../assets/Images/email-frame.png";
 import passwordFrame from "../../assets/Images/password-frame.png";
 
-function SignUp() {
+function SignIn() {
   return (
     <div className="body">
       <header>
@@ -40,13 +40,13 @@ function SignUp() {
           </div>
           {/* Btns */}
           <div className="form__btn_wrapper">
-            <button className="btn" type="button">SIGN UP</button>
-            <button className="submit__btn" type="submit">SIGN IN</button>
+            <button className="btn" type="button">SIGN IN</button>
+            <button className="submit__btn" type="submit">SIGN UP</button>
           </div>
         </form>
       </main>
     </div>
-  );
+  )
 }
 
-export default SignUp;
+export default SignIn

@@ -10,7 +10,7 @@ function SignIn() {
       <header>
         <div className="header__logo">
           <img src={logo} alt="Logo" />
-          <h2>SING UP</h2>
+          <h2>SING IN</h2>
         </div>
       </header>
       <main>
@@ -40,8 +40,8 @@ function SignIn() {
           </div>
           {/* Btns */}
           <div className="form__btn_wrapper">
-            <button className="btn" type="button">SIGN IN</button>
-            <button className="submit__btn" type="submit">SIGN UP</button>
+            <button className="btn" type="button">SIGN UP</button>
+            <button className="submit__btn" type="submit">SIGN IN</button>
           </div>
         </form>
       </main>

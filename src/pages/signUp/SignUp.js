@@ -3,6 +3,7 @@ import "./signUp.css";
 import logo from "../../assets/Images/logo.png";
 import emailFrame from "../../assets/Images/email-frame.png";
 import passwordFrame from "../../assets/Images/password-frame.png";
+import userFrame from "../../assets/Images/user-frame.png";
 
 function SignUp() {
   return (
@@ -17,6 +18,24 @@ function SignUp() {
         <form className="main__form">
           {/* Inputs */}
           <div className="form__input_wrapper">
+            <div className="frame__wrapper">
+              <input
+                className="email__input"
+                type="text"
+                placeholder="First name"
+                required
+              />
+              <img className="input__frames" src={userFrame} />
+            </div>
+            <div className="frame__wrapper">
+              <input
+                className="email__input"
+                type="text"
+                placeholder="Last name"
+                required 
+              />
+              <img className="input__frames" src={userFrame} />
+            </div>
             <div className="frame__wrapper">
               <input
                 className="email__input"

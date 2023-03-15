@@ -1,9 +1,9 @@
 import React from "react";
-import "./signUp.css";
 import logo from "../../assets/Images/logo.png";
 import emailFrame from "../../assets/Images/email-frame.png";
 import passwordFrame from "../../assets/Images/password-frame.png";
 import userFrame from "../../assets/Images/user-frame.png";
+import "./signUp.css";
 
 function SignUp() {
   return (

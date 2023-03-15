@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../../assets/Images/logo.png";
 import emailFrame from "../../assets/Images/email-frame.png";
 import passwordFrame from "../../assets/Images/password-frame.png";
+import './signIn.css'
 
 function SignIn() {
   return (
@@ -13,7 +14,7 @@ function SignIn() {
         </div>
       </header>
       <main>
-        <form className="main__form">
+        <form className="main__form2">
           {/* Inputs */}
           <div className="form__input_wrapper">
             <div className="frame__wrapper">
@@ -38,7 +39,7 @@ function SignIn() {
             </div>
           </div>
           {/* Btns */}
-          <div className="form__btn_wrapper">
+          <div className="form__btn_wrapper2">
             <button className="btn" type="button">SIGN UP</button>
             <button className="submit__btn" type="submit">SIGN IN</button>
           </div>

@@ -5,7 +5,7 @@ import Statistics from "../../components/Statistics/Statistics";
 
 function Main() {
   return (
-    <div>
+    <div className="back__of_main">
       <LandingPageHeader />
       <Statistics />
     </div>

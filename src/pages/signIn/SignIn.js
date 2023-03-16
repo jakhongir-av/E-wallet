@@ -7,12 +7,10 @@ import './signIn.css'
 function SignIn() {
   return (
     <div className="body">
-      <header>
         <div className="header__logo">
           <img src={logo} alt="Logo" />
           <h2>SING IN</h2>
         </div>
-      </header>
       <main>
         <form className="main__form2">
           {/* Inputs */}

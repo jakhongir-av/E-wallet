@@ -8,12 +8,10 @@ import "./signUp.css";
 function SignUp() {
   return (
     <div className="body">
-      <header>
         <div className="header__logo">
           <img src={logo} alt="Logo" />
           <h2>SING UP</h2>
         </div>
-      </header>
       <main>
         <form className="main__form">
           {/* Inputs */}

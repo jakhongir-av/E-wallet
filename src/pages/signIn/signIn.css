@@ -28,7 +28,7 @@
     justify-content: center;
 }
 
-input {
+.email__input, .password__input {
     width: 310px;
     padding: 16px 12px;
     padding-left: 30px;
@@ -40,7 +40,7 @@ input {
     color: #3D6670;
 }
 
-input::placeholder {
+.email__input::placeholder {
     font-family: 'Nunito';
     font-weight: 400;
     font-size: 18px;
@@ -48,7 +48,19 @@ input::placeholder {
     color: #94AFB6;
 }
 
-input:focus {
+
+.password__input::placeholder {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #94AFB6;
+}
+
+.email__input:focus {
+    outline: none;
+}
+.password__input:focus {
     outline: none;
 }
 

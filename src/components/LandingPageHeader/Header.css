@@ -63,9 +63,9 @@ header {
     backdrop-filter: blur(3.5px);
     border-radius: 13px;
     transform: translateY(-10%);
-    transition: all .3s ease-in;
-    opacity: 0;
+    transition: all 0.2s ease-in;
     z-index: -1;
+    opacity: 0;
 }
 
 .header__list_items {

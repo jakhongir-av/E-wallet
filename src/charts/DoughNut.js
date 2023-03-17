@@ -7,6 +7,7 @@ import {
   Tooltip,
   Legend
 } from "chart.js";
+import "./DoughNut.css";
 
 import { Bar } from "react-chartjs-2";
 
@@ -15,20 +16,23 @@ function DoughNut() {
     labels: ["Mon", "Tue", "Wed"],
     datasets: [
       {
-        label: "369",
-        data: [3, 6, 9],
-        backgroundColor: "aqua",
+        label: "168",
+        data: [100, 600, 700],
+        backgroundColor: "rgba(97, 138, 50, 0.7)",
         borderColor: "transparent",
         borderRadius: 10,
-        borderWidth: 1
+        borderWidth: 2,
+        barThickness: '44',
+        
       },
       {
-        label: "363",
-        data: [3, 6, 9],
-        background: 'linear-gradient(180deg, rgba(245, 170, 188, 0.7) 0%, rgba(196, 42, 51, 0.7) 100%)',
+        label: "Income",
+        data: [150, 340, 541],
+        backgroundColor: "rgba(196, 42, 51, 0.7)",
         borderColor: "transparent",
         borderRadius: 10,
-        borderWidth: 1
+        borderWidth: 2,
+        barThickness: '44',
       }
     ]
   };
@@ -36,14 +40,31 @@ function DoughNut() {
   const options = {
     scales: {
       x: {
-        type: 'category',
-        labels: ['January', 'February', 'March']
+        type: "category",
+        labels: ["Cash", "TBC humo", "SQB"],
+        grid: {
+          display: false,
+        },
+        ticks: {
+          font: {
+            family: 'Nunito',
+            size: 13,
+            weight: 600,
+          },
+          color: '#3D6670'
+        }
       },
       y: {
-        type: 'linear',
+        type: "linear",
         ticks: {
-          beginAtZero: true
-        }
+          beginAtZero: true,
+          font: {
+            family: 'Nunito',
+            size: 8,
+            weight: 400
+          },
+          color: '#94AFB6',
+        },
       }
     }
   };
@@ -51,8 +72,13 @@ function DoughNut() {
   return (
     <div>
       <div>
-
-        <Bar data={data} options={options} width={100} height={50} />
+        <Bar
+          className="barChart"
+          data={data}
+          options={options}
+          width={100}
+          height={50}
+        />
       </div>
     </div>
   );

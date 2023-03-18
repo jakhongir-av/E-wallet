@@ -14,19 +14,18 @@ function LandingPageHeader() {
   };
 
   return (
-    <header>
+    <header className="header__of_landing">
       <nav className="nav">
         <a href="#">
           <img className="icons" src={userFrame} />
         </a>
         <div className="selector">
-          <div id="selectField">
-            <p onClick={toggleMenu} title="All wallets">
+          <div id="selectField" onClick={toggleMenu}>
+            <p title="All wallets">
               All wallets
             </p>
             <img
               className="rotate"
-              onClick={toggleMenu}
               src={selectOption}
               ref={rotate}
             />

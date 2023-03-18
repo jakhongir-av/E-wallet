@@ -10,7 +10,7 @@ function Expenses() {
 
   function expensesList() {
     down.current.classList.toggle("expenses__dropdown");
-    rotate.current.classList.toggle("rotate");
+    rotate.current.classList.toggle("expenses__rotate");
   }
 
   return (
@@ -19,7 +19,7 @@ function Expenses() {
       <div className="expenses__header">
         <div className="expenses__dropdown" onClick={expensesList}>
           <p>This week</p>
-          <img ref={rotate} src={select} alt="Dropdown" />
+          <img className="expenses__rotate" ref={rotate} src={select} alt="Dropdown" />
         </div>
 
         {/* Expenses List */}

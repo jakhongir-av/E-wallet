@@ -1,4 +1,4 @@
-header {
+.header__of_landing {
     background: #243972;
     margin: 0;
     padding: 0;
@@ -37,10 +37,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     gap: 9px;
-    width: 100%;
-    background-color: transparent;
 }
 
 #selectField p {

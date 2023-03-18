@@ -28,10 +28,9 @@
 
 .expenses__dropdown img {
     transition: all 0.2s ease;
-
 }
 
-.rotate {
+.expenses__rotate {
     transform: rotate(180deg);
 }
 
@@ -116,8 +115,10 @@
 
 .expenses__list_items:hover {
     background-color: grey;
+    border-radius: 5px;
 }
-.expenses__list_items p:hover {
+
+.expenses__list_items:hover p {
     color: #fff;
 }
 

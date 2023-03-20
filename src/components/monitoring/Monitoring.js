@@ -10,6 +10,7 @@ import strelka from "../../assets/Icons/transaction.png";
 import korzinka from "../../assets/Icons/korzinka.png";
 import loop from "../../assets/Icons/loop.png";
 import "./monitoring.css";
+import Footer from "../footer/Footer";
 
 function Monitoring() {
   return (
@@ -151,6 +152,7 @@ function Monitoring() {
           <img src={loop} alt="Img..."></img>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

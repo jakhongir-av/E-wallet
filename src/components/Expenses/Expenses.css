@@ -1,0 +1,133 @@
+.expenses {
+    margin-bottom: 30px;
+}
+
+.expenses__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expenses__header p {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #94AFB6;
+}
+
+.expenses__dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: #F1F3F6;
+    border-radius: 25px;
+}
+
+.expenses__dropdown img {
+    transition: all 0.2s ease;
+}
+
+.expenses__rotate {
+    transform: rotate(180deg);
+}
+
+.expenses__dropdown p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #404CB3;
+}
+
+.expenses__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 26px;
+}
+
+.expenses__body img {
+    width: 48px;
+}
+
+.expenses__spending {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.expenses__body_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.expenses__body_intro p {
+    margin: 0;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #3D6670;
+
+}
+
+.expenses__body_intro span {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #94AFB6;
+}
+
+.expenses__list {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: #EEEEEE;
+    border-radius: 13px;
+    list-style: none;
+
+    transform: translateY(-10%);
+    transition: all 0.2s ease-in;
+    z-index: -1;
+    opacity: 0;
+}
+
+.expenses__list p {
+    margin: 0;
+}
+
+.expenses__list_items {
+    padding: 12px 20px;
+    width: 90px;
+    text-align: left;
+}
+
+.expenses__list_items:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.expenses__list_items:hover p {
+    color: #fff;
+}
+
+.list__border_bottom {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.expenses__dropdown {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}

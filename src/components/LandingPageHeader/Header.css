@@ -1,4 +1,4 @@
-header {
+.header__of_landing {
     background: #243972;
     margin: 0;
     padding: 0;
@@ -37,10 +37,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     gap: 9px;
-    width: 100%;
-    background-color: transparent;
 }
 
 #selectField p {
@@ -63,9 +60,9 @@ header {
     backdrop-filter: blur(3.5px);
     border-radius: 13px;
     transform: translateY(-10%);
-    transition: all .3s ease-in;
-    opacity: 0;
+    transition: all 0.2s ease-in;
     z-index: -1;
+    opacity: 0;
 }
 
 .header__list_items {
@@ -111,7 +108,7 @@ header {
 .show {
     transform: translateY(0);
     opacity: 1;
-    z-index: 1;
+    z-index: 9999;
 }
 
 .balance {

@@ -1,13 +1,17 @@
-import React from 'react'
-import ModifyHeader from '../../components/ModifyHeader/ModifyHeader'
-import './Modify.css'
+import React from "react";
+import ModifyData from "../../components/ModifyData/ModifyData";
+import ModifyHeader from "../../components/ModifyHeader/ModifyHeader";
+import "./Modify.css";
 
 function Modify() {
   return (
-    <div>
-      <ModifyHeader />
-    </div>
-  )
+    <form className="modify__wrapper">
+        <ModifyHeader />
+        <div className="modify__main">
+            <ModifyData />
+        </div>
+    </form>
+  );
 }
 
-export default Modify
+export default Modify;

@@ -1,0 +1,374 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.monitoring_header {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.monitoring_link {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #404cb2;
+}
+
+.monitoring_heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.monitoring_btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #404cb2;
+}
+
+.card {
+  background: linear-gradient(108.85deg, #243972 0%, #14234a 100%);
+  border-radius: 10px;
+  width: 300px;
+  height: 175px;
+  margin: 0 auto;
+}
+
+.card_heading,
+.card_heading_second {
+  color: #fff;
+}
+
+.card_heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 23px 20px;
+}
+
+.card_div {
+  padding: 0 0 0 150px;
+}
+
+.card_description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 5px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #94afb6;
+  padding-left: 15px;
+}
+
+.card_heading_second {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.02em;
+}
+
+.chart {
+  width: 343px;
+  height: 210px;
+  background: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.chart_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chart_heading {
+  width: 100px;
+  height: 32px;
+  background: #f1f3f6;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.chart_heading img {
+  padding-top: 3px;
+}
+
+.chart_description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #94afb6;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.income_div {
+  width: 171.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.income_circle {
+  width: 48px;
+  height: 48px;
+  background-color: #41be06;
+  border-radius: 50%;
+}
+
+.income_circle img,
+.spending_circle img {
+  padding-top: 15px;
+}
+
+.spending_div {
+  width: 171.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spending_circle {
+  width: 48px;
+  height: 48px;
+  background-color: #eb1f39;
+  border-radius: 50%;
+}
+
+.income_description,
+.spending_description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2px;
+  display: flex;
+  align-items: center;
+  color: #94afb6;
+}
+
+.income_heading,
+.income_heading {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 2px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #3d6670;
+}
+
+hr {
+  margin-top: 20px;
+  background-color: #dddddd;
+}
+
+.show_heading {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #404cb3;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.history {
+  width: 343px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 100px;
+}
+
+.history_include {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.history_heading {
+  padding: 10px 20px;
+  background: #f1f3f6;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin: 10px 0 0 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #404cb2;
+  transition: all 0.3s ease-in-out;
+}
+
+.history_heading:hover {
+  background-color: #404cb2;
+  color: #fff;
+}
+
+.history_date {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 180px;
+}
+
+.history_description {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #94afb6;
+}
+
+.main_heading {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #41be06;
+  border-radius: 12px;
+  padding: 2px 5px;
+}
+
+.history_monitoring {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.history_img {
+    width: 25px;
+    height: 25px;
+}
+
+.history_icon {
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+
+.history_icon img {
+  background-color: #f1f3f6;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.hisrory_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.salary_description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #3d6670;
+  padding-left: 10px;
+}
+
+
+.history_clock {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 8px;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  color: #94afb6;
+}
+
+.history_money {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 8px;
+  text-align: right;
+  color: #41be06;
+}
+
+.money {
+  color: #eb1f39;
+}

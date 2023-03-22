@@ -1,0 +1,30 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 188px);
+  margin-top: 30px;
+  width: 375px;
+  height: 85px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(61, 102, 112, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer_description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 5px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #94afb6;
+}
+
+.description {
+    color: #404CB2;
+}

@@ -8,8 +8,8 @@ import SignUp from "./pages/signUp/SignUp";
 function App() {
   return (
     <div className="App">
-      {/* <SignIn /> */}
-      <Monitoring />
+      <SignUp />
+      {/* <Monitoring /> */}
       {/* <Modify /> */}
     </div>
   );

@@ -5,10 +5,10 @@ import vector from "../../assets/Images/vector.png";
 function ModifyData() {
   const showModifyDropdown = useRef();
   const rotateModifyVector = useRef();
-  const [isChecked, setIsChecked] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("option1");
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
   };
 
   function showModifyDropdownMenu() {
@@ -16,6 +16,8 @@ function ModifyData() {
     rotateModifyVector.current.classList.toggle("rotateModifyVector");
   }
 
+
+  
   return (
     <div className="modify__main_wrapper">
       <span>Wallet name</span>
@@ -41,9 +43,26 @@ function ModifyData() {
       <div className="modify__checkbox_container">
         <label className="modify__checkbox_label">
           <input
-            type="checkbox"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
+            type="radio"
+            value="option1"
+            checked={selectedOption === "option1"}
+            onChange={handleOptionChange}
+          />
+        </label>
+        <label className="modify__checkbox_label">
+          <input
+            type="radio"
+            value="option2"
+            checked={selectedOption === "option2"}
+            onChange={handleOptionChange}
+          />
+        </label>
+        <label className="modify__checkbox_label">
+          <input
+            type="radio"
+            value="option3"
+            checked={selectedOption === "option3"}
+            onChange={handleOptionChange}
           />
         </label>
       </div>

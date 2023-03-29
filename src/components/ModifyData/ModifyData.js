@@ -16,8 +16,6 @@ function ModifyData() {
     rotateModifyVector.current.classList.toggle("rotateModifyVector");
   }
 
-
-  
   return (
     <div className="modify__main_wrapper">
       <span>Wallet name</span>
@@ -40,31 +38,47 @@ function ModifyData() {
       </div>
 
       {/* Checkbox */}
+      <span className="chekbox__span">Card type</span>
       <div className="modify__checkbox_container">
-        <label className="modify__checkbox_label">
+        <div className="modify__checkboxes">
           <input
+            id="radio1"
+            name="myRadio"
             type="radio"
             value="option1"
             checked={selectedOption === "option1"}
             onChange={handleOptionChange}
           />
-        </label>
-        <label className="modify__checkbox_label">
+          <label for="radio1" className="modify__checkbox_label border__label1">
+            Humo
+          </label>
+        </div>
+        <div className="modify__checkboxes">
           <input
+            id="radio2"
+            name="myRadio"
             type="radio"
             value="option2"
             checked={selectedOption === "option2"}
             onChange={handleOptionChange}
           />
-        </label>
-        <label className="modify__checkbox_label">
+          <label for="radio2" className="modify__checkbox_label border__label2">
+            Uzcard
+          </label>
+        </div>
+        <div className="modify__checkboxes">
           <input
+            id="radio3"
+            name="myRadio"
             type="radio"
             value="option3"
             checked={selectedOption === "option3"}
             onChange={handleOptionChange}
           />
-        </label>
+          <label for="radio3" className="modify__checkbox_label border__label3">
+            Cash
+          </label>
+        </div>
       </div>
     </div>
   );

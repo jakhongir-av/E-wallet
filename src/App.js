@@ -2,15 +2,15 @@ import "./App.css";
 import Monitoring from "./components/monitoring/Monitoring";
 import Main from "./pages/main/Main";
 import Modify from "./pages/modify/Modify";
-import SignIn from "./pages/signIn/SignIn";
-import SignUp from "./pages/signUp/SignUp";
+import Register from "./pages/register/register";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <SignUp />
-      {/* <Monitoring /> */}
-      {/* <Modify /> */}
+      <BrowserRouter>
+        <Modify />
+      </BrowserRouter>
     </div>
   );
 }

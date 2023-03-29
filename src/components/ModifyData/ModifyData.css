@@ -116,8 +116,61 @@
     transform: rotate(180deg);
 }
 
-.modify__checkbox_label {
-    
+/** Custom checbox */
+
+
+.modify__checkbox_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    border-bottom: 1px dashed #DDDDDD;
+    padding-bottom: 15px;
+}
+
+.chekbox__span {
+    margin-top: 28px;
+}
+
+.modify__checkboxes {
+    position: relative;
+}
+
+.modify__checkboxes input {
+    display: none;
 }
 
 
+
+.modify__checkbox_label {
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid #404CB3;
+    width: 69px;
+
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #404CB3;
+    transition: all 0.1s ease;
+}
+
+.border__label1 {
+    border-radius: 4px 0 0 4px;
+}
+
+.border__label3 {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.border__label2 {
+    border-left: none;
+    border-right: none;
+}
+
+.modify__checkboxes input:checked+.modify__checkbox_label {
+    background: #404CB3;
+    color: #FFFFFF;
+}

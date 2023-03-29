@@ -1,0 +1,176 @@
+.modify__main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.modify__main_wrapper span {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #94AFB6;
+    margin-bottom: 6px;
+
+}
+
+.main__visa_input input {
+    border: 1px solid #94AFB6;
+    border-radius: 4px;
+    padding: 8px 10px;
+    width: 311px;
+    margin-bottom: 28px;
+}
+
+.main__visa_input input::placeholder {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D6670;
+}
+
+.main__visa_input input:focus {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D6670;
+}
+
+.modify__main_dropdown p {
+    margin: 0;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D6670;
+}
+
+.modify__main_dropdown {
+    position: relative;
+    width: 311px;
+    padding: 8px 10px;
+    background: #FFFFFF;
+    border: 1px solid #94AFB6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.modify__dropdown_menu {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-10%);
+    list-style: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    top: 110%;
+    left: 0;
+    padding: 0;
+    border-radius: 13px;
+    transition: all 0.2s ease-in;
+
+}
+
+.modify__dropdown_menu li {
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+    transition: all 0.3s ease-in;
+}
+
+.modify__dropdown_menu li:hover {
+    background-color: grey;
+    color: #FFFFFF;
+}
+
+.modify__dropdown_menu li:hover .modify__dropdown_menu {
+    background: transparent;
+}
+
+.showModifyDropdown {
+    opacity: 1;
+    z-index: 99999;
+    transform: translateY(0);
+}
+
+.borderBottomModify {
+    border-radius: 13px 13px 0 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.borderRadiusModify {
+    border-radius: 0 0 13px 13px;
+}
+
+.modify__main_dropdown img {
+    transition: all 0.2s ease-in;
+}
+
+.rotateModifyVector {
+    transform: rotate(180deg);
+}
+
+/** Custom checbox */
+
+
+.modify__checkbox_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    border-bottom: 1px dashed #DDDDDD;
+    padding-bottom: 15px;
+}
+
+.chekbox__span {
+    margin-top: 28px;
+}
+
+.modify__checkboxes {
+    position: relative;
+}
+
+.modify__checkboxes input {
+    display: none;
+}
+
+
+
+.modify__checkbox_label {
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid #404CB3;
+    width: 69px;
+
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #404CB3;
+    transition: all 0.1s ease;
+}
+
+.border__label1 {
+    border-radius: 4px 0 0 4px;
+}
+
+.border__label3 {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.border__label2 {
+    border-left: none;
+    border-right: none;
+}
+
+.modify__checkboxes input:checked+.modify__checkbox_label {
+    background: #404CB3;
+    color: #FFFFFF;
+}

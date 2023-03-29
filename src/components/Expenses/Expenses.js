@@ -19,7 +19,7 @@ function Expenses() {
       <div className="expenses__header">
         <div className="expenses__dropdown" onClick={expensesList}>
           <p>This week</p>
-          <img className="expenses__rotate" ref={rotate} src={select} alt="Dropdown" />
+          <img ref={rotate} src={select} alt="Dropdown" className="expenses__rotate" />
         </div>
 
         {/* Expenses List */}

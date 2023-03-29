@@ -4,6 +4,7 @@ import top from "../../assets/Icons/top.png";
 import left from "../../assets/Icons/left.png";
 import select from "../../assets/Icons/toBottom.png";
 import "./monitoring.css";
+import Footer from "../Footer/Footer";
 
 function Monitoring() {
   return (

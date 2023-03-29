@@ -1,23 +1,70 @@
-.modify__header {
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+.modify__wrapper {
+    height: 100vh;
+    background: #F1F3F6;
+
 }
 
-.modify__header p {
+.modify__main {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px 16px;
+    width: 343px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modify__card_checker {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.modify__card_checker span {
     font-family: 'Nunito';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #404CB3;
+    font-size: 12px;
+    line-height: 12px;
+    color: #94AFB6;
 }
 
-.modify__header h1 {
+.modify__card_checker input {
+    width: 311px;
+    background: #FFFFFF;
+    border: 1px solid #94AFB6;
+    border-radius: 4px;
+    padding: 8px 10px;
+
     font-family: 'Nunito';
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 20px;
     color: #3D6670;
 }
+
+.modify__card_checker input:focus {
+    outline: 0;
+}
+
+.modify__submit_btn {
+    padding: 15px 24px;
+    border: none;
+    background: #404CB3;
+    border-radius: 4px;
+    width: 331px;
+    margin-top: 18px;
+
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+

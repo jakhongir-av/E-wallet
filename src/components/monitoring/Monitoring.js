@@ -10,7 +10,7 @@ import strelka from "../../assets/Icons/transaction.png";
 import korzinka from "../../assets/Icons/korzinka.png";
 import loop from "../../assets/Icons/loop.png";
 import "./monitoring.css";
-import Footer from "../footer/Footer";
+import Footer from "../Footer/Footer";
 
 function Monitoring() {
   return (

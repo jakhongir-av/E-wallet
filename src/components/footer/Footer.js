@@ -4,7 +4,7 @@ import analitics from "../../assets/Icons/analitics.png";
 import add from "../../assets/Icons/add.png";
 import wallet from "../../assets/Icons/wallet.png";
 import profile from "../../assets/Icons/profile.png";
-import '../../components/footer/Footer.css'
+import "./Footer.css";
 
 function Footer() {
   return (

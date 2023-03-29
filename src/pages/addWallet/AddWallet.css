@@ -1,0 +1,96 @@
+.addWallet__container {
+    height: 100vh;
+    background: #F1F3F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addWallet__main {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px 16px;
+}
+
+.addWallet__header {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.addWallet__header p {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #404CB3;
+}
+
+.addWallet__header h1 {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    color: #3D6670;
+}
+
+.addWallet__personal {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.addWallet__personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.addWallet__personal_info span {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #94AFB6;
+}
+
+.addWallet__personal_info input {
+    padding: 8px 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D6670;
+
+    background: #FFFFFF;
+    border: 1px solid #94AFB6;
+    border-radius: 4px;
+    width: 311px;
+}
+
+.addWallet__personal_info input:focus {
+    outline: 2px solid #94AFB6;
+}
+
+.addWallet__submit_btn {
+    margin-top: 28px;
+    background: #404CB3;
+    border-radius: 4px;
+    padding: 15px 24px;
+    border: none;
+    width: 331px;
+
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

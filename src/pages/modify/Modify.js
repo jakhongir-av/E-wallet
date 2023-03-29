@@ -7,8 +7,8 @@ import "./Modify.css";
 function Modify() {
   return (
     <div>
+      <ModifyHeader />
       <form className="modify__wrapper">
-        <ModifyHeader />
         <div className="modify__main">
           <ModifyData />
           <div className="modify__card_checker">

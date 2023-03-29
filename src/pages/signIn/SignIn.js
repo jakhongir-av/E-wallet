@@ -9,7 +9,7 @@ function SignIn() {
     <div className="body">
         <div className="header__logo">
           <img src={logo} alt="Logo" />
-          <h2>SING IN</h2>
+          <h2>SIGN IN</h2>
         </div>
       <main>
         <form className="main__form2">

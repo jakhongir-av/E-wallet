@@ -18,6 +18,9 @@ function App() {
       {/* <AddWallet /> */}
       <LandingPageHeader />
       <History />
+      <BrowserRouter>
+        <Card />
+      </BrowserRouter>
     </div>
   );
 }

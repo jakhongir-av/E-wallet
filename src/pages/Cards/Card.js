@@ -10,7 +10,8 @@ import Footer from "../../components/Footer/Footer"
 
 function Card() {
   return (
-    <div className="main_container">
+    <div className="bg">
+      <div className="main_container container">
       <div className="main_card">
         <div className="card_header">
           <h1 className="card_heading">My wallets</h1>
@@ -47,10 +48,12 @@ function Card() {
           </div>
         </div>
         <button className="addWallet">
-          <img src={cardWallet}></img>ADD NEW WALLET
+          <img src={cardWallet}></img>
+          <span>ADD NEW WALLET</span>
         </button>
       </div>
       <Footer />
+    </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import visa from "../../assets/Images/visa.svg";
 import bitcoin from "../../assets/Images/bitcoin.svg";
 import paypal from "../../assets/Images/paypal.svg";
 import cardWallet from "../../assets/Images/cardWallet.svg";
-import Footer from "../../components/footer/Footer"
+import Footer from "../../components/Footer/Footer"
 
 function Card() {
   return (

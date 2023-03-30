@@ -4,8 +4,9 @@ import Card from "./pages/Cards/Card";
 import Main from "./pages/main/Main";
 import Modify from "./pages/modify/Modify";
 import Register from "./pages/register/register";
-import { BrowserRouter } from "react-router-dom";
 import AddWallet from "./pages/addWallet/AddWallet";
+import LandingPageHeader from "./components/LandingPageHeader/LandingPageHeader";
+import History from "./components/History/History"
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
       {/* <SignIn /> */}
       {/* <Monitoring /> */}
       {/* <Modify /> */}
-      <Card />
-      <BrowserRouter>
-        <AddWallet />
-      </BrowserRouter>
+      {/* <Card /> */}
+      {/* <AddWallet /> */}
+      <LandingPageHeader />
+      <History />
     </div>
   );
 }

@@ -60,6 +60,7 @@ function Monitoring() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -10,12 +10,8 @@ import AddWallet from "./pages/addWallet/AddWallet";
 function App() {
   return (
     <div className="App">
-      {/* <SignIn /> */}
-      {/* <Monitoring /> */}
-      {/* <Modify /> */}
-      <Card />
       <BrowserRouter>
-        <AddWallet />
+        <Card />
       </BrowserRouter>
     </div>
   );

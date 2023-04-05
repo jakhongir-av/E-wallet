@@ -6,21 +6,20 @@ import Modify from "./pages/modify/Modify";
 import Register from "./pages/register/register";
 import AddWallet from "./pages/addWallet/AddWallet";
 import LandingPageHeader from "./components/LandingPageHeader/LandingPageHeader";
-import History from "./components/History/History"
+import History from "./components/History/History";
+import SignIn from "./components/SignIn/SignIn";
 
 function App() {
   return (
     <div className="App">
-      {/* <SignIn /> */}
-      {/* <Monitoring /> */}
-      {/* <Modify /> */}
-      {/* <Card /> */}
-      {/* <AddWallet /> */}
+      {/* <SignIn />
+      <Monitoring />
+      <Modify />
+      <Card />
+      <AddWallet /> */}
       <LandingPageHeader />
       <History />
-      <BrowserRouter>
-        <Card />
-      </BrowserRouter>
+      <Card />
     </div>
   );
 }

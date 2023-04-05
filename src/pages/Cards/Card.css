@@ -1,6 +1,6 @@
 .main_container {
   background-color: #213873;
-  width: 100%;
+  max-width: 100%;
 }
 
 .main_card {

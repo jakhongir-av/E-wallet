@@ -77,6 +77,14 @@
     flex-direction: column;
     padding-left: 15px;
   }
+
+  /* .monitoring_date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+  } */
   
   .history_img {
       width: 25px;
@@ -98,6 +106,7 @@
   .hisrory_main {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
   
   .salary_description {
@@ -111,6 +120,12 @@
     color: #3d6670;
     padding-left: 10px;
   }
+
+  .monitoring_date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   
   
   .history_clock {
@@ -121,7 +136,7 @@
     line-height: 8px;
     display: flex;
     align-items: center;
-    text-align: end;
+    text-align: right;
     color: #94afb6;
   }
   
@@ -133,6 +148,7 @@
     line-height: 8px;
     text-align: right;
     color: #41be06;
+    padding-right: 10px;
   }
   
   .money {

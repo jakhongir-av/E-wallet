@@ -3,7 +3,7 @@ import bottom from "../../assets/Icons/bottom.png";
 import top from "../../assets/Icons/top.png";
 import left from "../../assets/Icons/left.png";
 import select from "../../assets/Icons/toBottom.png";
-import "./monitoring.css";
+import "./Monitoring.css";
 import Footer from "../Footer/Footer";
 
 function Monitoring() {

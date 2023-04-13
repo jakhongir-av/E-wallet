@@ -136,8 +136,11 @@
     line-height: 8px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
     text-align: right;
     color: #94afb6;
+    width: 100%;
   }
   
   .history_money {

@@ -12,10 +12,14 @@ function History() {
   const [filter, setFilter] = useState("All");
   let history = useContext(HistoryContext);
 
+  function myFunc(e) {
+    console.log(e);
+  }
+
   return (
     <div className="history">
       <div className="history_include">
-        <button className="history_heading" onClick={() => setFilter("All")}>
+        <button className="history_heading"  onClick={() => myFunc()}>
           All
         </button>
         <button className="history_heading" onClick={() => setFilter("Income")}>

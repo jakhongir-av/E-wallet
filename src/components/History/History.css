@@ -147,3 +147,9 @@
 .money {
   color: #eb1f39;
 }
+
+
+.active_class {
+  background-color: #404cb2;
+  color: #fff;
+}

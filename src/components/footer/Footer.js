@@ -12,31 +12,31 @@ function Footer() {
     <div className="footer">
       <div className="footer_include">
         <Link to="/home" className="footer_link active">
-          <img alt="img..." src={home}></img>
+          <img alt="img..." src={home} />
         </Link>
         <p className="footer_description active">Dashboard</p>
       </div>
       <div className="footer_include">
         <Link to="/analitics">
-          <img alt="img..." src={analitics}></img>
+          <img alt="img..." src={analitics} />
         </Link>
         <p className="footer_description">Analitycs</p>
       </div>
       <div className="footer_include">
         <Link to="/add-wallet">
-          <img alt="img..." src={add}></img>
+          <img alt="img..." src={add} />
         </Link>
         <p className="footer_description">Add wallet</p>
       </div>
       <div className="footer_include">
         <Link to="/wallet">
-          <img alt="img..." src={wallet}></img>
+          <img alt="img..." src={wallet} />
         </Link>
         <p className="footer_description">Wallets</p>
       </div>
       <div className="footer_include">
         <Link to="/profile">
-          <img alt="img..." src={profile}></img>
+          <img alt="img..." src={profile} />
         </Link>
         <p className="footer_description">My profile</p>
       </div>

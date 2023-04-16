@@ -5,20 +5,22 @@ import loop from "../../assets/Icons/loop.png";
 import HistoryContext from "../../context/HistoryContext";
 
 function History() {
-  const [filter, setFilter] = useState("All");
   let history = useContext(HistoryContext);
-
-  function myFunc(e) {
-    console.log(e);
-  }
+  const [filter, setFilter] = useState("All");
+  const [income, setIncome] = useState(history)
 
   return (
     <div className="history">
       <div className="history_include">
-        <button className="history_heading"  onClick={() => myFunc()}>
+        <button className="history_heading" onClick={() => setFilter()}>
           All
         </button>
-        <button className="history_heading" onClick={() => setFilter("Income")}>
+        <button className="history_heading" onClick={() => setIncome(history.map((track, index) => {
+          if(track.tracks[index].type === "income") {
+            setIncome(history)
+            console.log(history);
+          }
+        }))}>
           Income
         </button>
         <button
@@ -37,7 +39,7 @@ function History() {
             {day.tracks.map((track) => (
               <div className="hisrory_main" key={track.id}>
                 <div className="history_icon">
-                  <img className="history_img" src={global} alt="Img..."></img>
+                  <img className="history_img" src={global} alt="Img..." />
                   <p className="salary_description salary">{track.info}</p>
                 </div>
                 <div className="monitoring_date">

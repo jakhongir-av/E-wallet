@@ -23,7 +23,7 @@ const HistoryContextProvider = ({ children }) => {
           qty: 350,
           icon: "global",
           info: "Online store payment",
-          time: "02:03 PM",
+          time: "03:40 PM",
         },
         {
           id: 3,
@@ -31,11 +31,12 @@ const HistoryContextProvider = ({ children }) => {
           qty: 1000,
           icon: "strelka",
           info: "Transaction",
-          time: "02:03 PM",
+          time: "06:00 AM",
         },
       ],
     },
   ]);
+
 
   return (
     <HistoryContext.Provider value={history}>

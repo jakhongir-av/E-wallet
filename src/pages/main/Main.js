@@ -4,7 +4,6 @@ import LandingPageHeader from "../../components/LandingPageHeader/LandingPageHea
 import Statistics from "../../components/Statistics/Statistics";
 import History from "../../components/History/History";
 import Cards from "../Cards/Card";
-import DoughNut from "../../charts/DoughNut";
 
 function Main() {
   return (

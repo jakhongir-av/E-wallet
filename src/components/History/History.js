@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../History/History.css";
-import tel from "../../assets/Icons/phone.png";
 import global from "../../assets/Icons/global.png";
-import car from "../../assets/Icons/car.png";
-import strelka from "../../assets/Icons/transaction.png";
-import korzinka from "../../assets/Icons/korzinka.png";
 import loop from "../../assets/Icons/loop.png";
 import HistoryContext from "../../context/HistoryContext";
 

@@ -4,14 +4,16 @@ import LandingPageHeader from "../../components/LandingPageHeader/LandingPageHea
 import Statistics from "../../components/Statistics/Statistics";
 import History from "../../components/History/History";
 import Cards from "../Cards/Card";
+import ShowChart from "../ShowChart/ShowChart";
 
 function Main() {
   return (
     <div className="back__of_main">
-      <LandingPageHeader />
+      {/* <LandingPageHeader />
       <Statistics />
       <History />
-      <Cards />
+      <Cards /> */}
+      <ShowChart /> 
     </div>
   );
 }

@@ -57,7 +57,6 @@
     width: 70%;
 
     background: transparent;
-    backdrop-filter: blur(3.5px);
     border-radius: 13px;
     transform: translateY(-10%);
     transition: all 0.2s ease-in;

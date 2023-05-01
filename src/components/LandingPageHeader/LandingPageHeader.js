@@ -27,10 +27,10 @@ function LandingPageHeader() {
           <img className="icons" src={userFrame} />
         </Link>
         <div className="selector">
-          <div id="selectField" onClick={toggleMenu}>
+          <button id="selectField" onClick={toggleMenu}>
             <p title="All wallets">All wallets</p>
             <img className="rotate" src={selectOption} ref={rotate} />
-          </div>
+          </button>
 
           <ul className="header__list" ref={menuRef}>
             <li className="header__list_items border">

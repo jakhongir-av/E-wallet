@@ -1,22 +1,19 @@
 import "./Header.css";
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import userFrame from "../../assets/Images/user-frame2.png";
 import dataFrame from "../../assets/Images/data-frame.png";
 import selectOption from "../../assets/Images/select-option.png";
-import { Link } from "react-router-dom";
 import MainContext from "../../context/mainContext";
-import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 function LandingPageHeader() {
-  const state = useContext(MainContext)
-
+  const state = useContext(MainContext);
   const menuRef = useRef();
   const rotate = useRef();
 
   const total = state.accounts.reduce((prev, curr) => {
-    return prev + curr.balance;
-  }, 0).toLocaleString('en-US').replace(/,g/, " ")
-
+    return prev + curr.balance 
+  }, 0).toLocaleString('en-US').replace(/, /g, " ")
 
   const toggleMenu = () => {
     menuRef.current.classList.toggle("show");
@@ -26,20 +23,14 @@ function LandingPageHeader() {
   return (
     <header className="header__of_landing">
       <nav className="nav">
-        <Link to={'/'}>
-          <img className="icons" src={userFrame} alt='icon'/>
+        <Link to="/">
+          <img className="icons" src={userFrame} />
         </Link>
         <div className="selector">
-          <div id="selectField" onClick={toggleMenu}>
-            <p title="All wallets">
-              All wallets
-            </p>
-            <img
-              className="rotate"
-              src={selectOption}
-              ref={rotate}
-            />
-          </div>
+          <button id="selectField" onClick={toggleMenu}>
+            <p title="All wallets">All wallets</p>
+            <img className="rotate" src={selectOption} ref={rotate} />
+          </button>
 
           <ul className="header__list" ref={menuRef}>
             <li className="header__list_items border">
@@ -69,7 +60,7 @@ function LandingPageHeader() {
       {/* Cash */}
       <div className="balance">
         <p>TOTAL BALANCE</p>
-        <h2>${total}</h2>
+        <h2>$ {total}</h2>
       </div>
     </header>
   );

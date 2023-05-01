@@ -1,7 +1,6 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Main from "./pages/main/Main";
-import { Route, Routes } from "react-router-dom";
-import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

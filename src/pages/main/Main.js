@@ -1,9 +1,11 @@
-import "./main.css";
+import "./Main.css";
 import React from "react";
 import LandingPageHeader from "../../components/LandingPageHeader/LandingPageHeader";
 import Statistics from "../../components/Statistics/Statistics";
-import Monitoring from "../../components/Monitoring/Monitoring";
-import History from '../../components/History/History'
+import History from "../../components/History/History";
+import Cards from "../Cards/Card";
+import ShowChart from "../ShowChart/ShowChart";
+import Footer from "../../components/Footer/Footer";
 
 function Main() {
   return (
@@ -11,6 +13,8 @@ function Main() {
       <LandingPageHeader />
       <Statistics />
       <History />
+      <Footer />
+      {/* <ShowChart />  */}
     </div>
   );
 }

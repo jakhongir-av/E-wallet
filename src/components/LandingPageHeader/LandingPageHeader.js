@@ -3,10 +3,20 @@ import React, { useRef } from "react";
 import userFrame from "../../assets/Images/user-frame2.png";
 import dataFrame from "../../assets/Images/data-frame.png";
 import selectOption from "../../assets/Images/select-option.png";
+import { Link } from "react-router-dom";
+import MainContext from "../../context/mainContext";
+import { useContext } from "react";
 
 function LandingPageHeader() {
+  const state = useContext(MainContext)
+
   const menuRef = useRef();
   const rotate = useRef();
+
+  const total = state.accounts.reduce((prev, curr) => {
+    return prev + curr.balance;
+  }, 0).toLocaleString('en-US').replace(/,g/, " ")
+
 
   const toggleMenu = () => {
     menuRef.current.classList.toggle("show");
@@ -16,9 +26,9 @@ function LandingPageHeader() {
   return (
     <header className="header__of_landing">
       <nav className="nav">
-        <a href="#">
-          <img className="icons" src={userFrame} />
-        </a>
+        <Link to={'/'}>
+          <img className="icons" src={userFrame} alt='icon'/>
+        </Link>
         <div className="selector">
           <div id="selectField" onClick={toggleMenu}>
             <p title="All wallets">
@@ -52,14 +62,14 @@ function LandingPageHeader() {
             </li>
           </ul>
         </div>
-        <a href="#">
-          <img className="icons" src={dataFrame} />
-        </a>
+        <Link to={'/'}>
+          <img className="icons" src={dataFrame} alt-='icon'/>
+        </Link>
       </nav>
       {/* Cash */}
       <div className="balance">
         <p>TOTAL BALANCE</p>
-        <h2>$24 358.50</h2>
+        <h2>${total}</h2>
       </div>
     </header>
   );

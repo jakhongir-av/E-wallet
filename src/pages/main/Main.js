@@ -2,6 +2,7 @@ import "./main.css";
 import React from "react";
 import LandingPageHeader from "../../components/LandingPageHeader/LandingPageHeader";
 import Statistics from "../../components/Statistics/Statistics";
+import Monitoring from "../../components/Monitoring/Monitoring";
 
 function Main() {
   return (

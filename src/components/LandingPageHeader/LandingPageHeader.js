@@ -53,9 +53,9 @@ function LandingPageHeader() {
             </li>
           </ul>
         </div>
-        <a href="#">
-          <img className="icons" src={dataFrame} />
-        </a>
+        <Link to={'/'}>
+          <img className="icons" src={dataFrame} alt-='icon'/>
+        </Link>
       </nav>
       {/* Cash */}
       <div className="balance">

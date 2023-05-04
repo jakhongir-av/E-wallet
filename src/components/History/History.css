@@ -50,7 +50,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 16px;
   display: flex;
   align-items: center;
   color: #94afb6;
@@ -128,7 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 20px;
+  padding-right: 12px;
   text-align: right;
   color: #94afb6;
   width: 100%;

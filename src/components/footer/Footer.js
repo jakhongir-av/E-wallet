@@ -2,7 +2,7 @@ import React from "react";
 import home from "../../assets/Images/Home.svg";
 import analitics from "../../assets/Images/analitic.svg";
 import add from "../../assets/Images/add.svg";
-import wallet from "../../assets/Images/cardWallet.svg";
+import wallet from "../../assets/Images/wallets.svg";
 import profile from "../../assets/Images/profile.svg";
 import { Link } from "react-router-dom";
 import "./Footer.css";
